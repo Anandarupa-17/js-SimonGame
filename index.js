@@ -29,7 +29,7 @@ function nextSequence(){
     playSound(randomChosenColor);
 }
 function playSound(name){
-    var audio = new Audio("./sounds/"+name+".mp3");
+    var audio = new Audio("./"+name+".mp3");
     audio.play();
 }
 function animatePress(currentColor){
@@ -46,7 +46,7 @@ function checkAnswer(currentLevel){
             }, 1000);
             $("h3").text(texts[Math.floor(Math.random()*5)]).fadeIn("fast");
                 setTimeout(function(){
-                    $("h3").faeOut("slow");
+                    $("h3").fadeOut("slow");
             });
         }
     }

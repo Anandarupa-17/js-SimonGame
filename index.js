@@ -5,7 +5,7 @@ var gamePattern = [];
 var userClickedPattern = [];
 var start = false;
 var level = 0;
-$(document).keyup(function(event){
+$(document).click(function(){
     if (start == false){
         nextSequence();
         $("#level-title").text("Level " + level);

@@ -51,11 +51,11 @@ function nextSequence(){
     gamePattern.push(randomChosenColor);
     playSound(randomChosenColor);
 }
-function animatePress(currentColor){
-    $(".currentColor").addClass("pressed");
-    setTimeout(function(){
-        $(".currentColor").removeClass("pressed");
-    }, 100);
+function animatePress(currentColor) {
+  $("#" + currentColor).addClass("pressed");
+  setTimeout(function () {
+    $("#" + currentColor).removeClass("pressed");
+  }, 100);
 }
 function playSound(name){
     var audio = new Audio("./"+name+".mp3");
